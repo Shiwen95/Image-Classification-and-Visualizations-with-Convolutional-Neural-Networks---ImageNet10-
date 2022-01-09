@@ -1,3 +1,6 @@
 # Image Classification and Visualizations with Convolutional Neural Networks --- ImageNet10
 
 One challenge of building a deep learning model is to choose an architecture that can learn the features in the dataset without being unnecessarily complex. This project involves building a CNN and training it on ImageNet10. I will use a method of architecture development called “single-batch training”, in which we cumulatively build a network architecture which can overfit a single training batch. A model which overfits performs very well on training data but generalises poorly on data it has not been trained on. If the model can easily overfit a single training batch, we know its architecture is complex enough to be able to learn the features present in the training data. Then we move on to training on the complete training set and adjust for the overfitting via regularisation.
+
+This project will use a subset of images from the ImageNet dataset, which contains 9000 images belonging to ten object classes. We will refer to the dataset as ImageNet10. The images can be found in a Git repository: git clone https://github.com/MohammedAlghamdi/imagenet10.git![image](https://user-images.githubusercontent.com/97412894/148706149-1a612896-163f-4c50-b009-73618db1d5d0.png)
+
