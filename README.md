@@ -1,1 +1,3 @@
-# Image-Classification-and-Visualizations-with-Convolutional-Neural-Networks---ImageNet10-
+# Image Classification and Visualizations with Convolutional Neural Networks --- ImageNet10
+
+One challenge of building a deep learning model is to choose an architecture that can learn the features in the dataset without being unnecessarily complex. This project involves building a CNN and training it on ImageNet10. I will use a method of architecture development called “single-batch training”, in which we cumulatively build a network architecture which can overfit a single training batch. A model which overfits performs very well on training data but generalises poorly on data it has not been trained on. If the model can easily overfit a single training batch, we know its architecture is complex enough to be able to learn the features present in the training data. Then we move on to training on the complete training set and adjust for the overfitting via regularisation.
