@@ -1,8 +1,6 @@
 """
 
-QUESTION 1
-
-Some helpful code for getting started.
+Load image data
 
 
 """
