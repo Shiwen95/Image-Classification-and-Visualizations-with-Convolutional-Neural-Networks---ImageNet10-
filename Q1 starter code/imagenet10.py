@@ -1,7 +1,5 @@
 """
 
-QUESTION 1
-
 PyTorch dataset class for ImageNet10.
 
 """
