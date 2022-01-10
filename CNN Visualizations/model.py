@@ -1,12 +1,3 @@
-"""
-
-Template code for COMP5623M CW1 Question 2
-
-python explore.py --image_path XX --use_pre_trained True
-
-
-"""
-
 import argparse
 import torch
 import matplotlib.pyplot as plt
@@ -42,7 +33,7 @@ for arg in vars(args):
 
 #########################################################################
 #
-#        QUESTION 2.1.2 code here
+#       read images
 # 
 #########################################################################
 
@@ -85,7 +76,7 @@ conv_layer_indices = [0, 3, 6, 8, 10]
 
 #########################################################################
 #
-#        QUESTION 2.1.3 
+#        extract the filters from a given layer of the model 
 # 
 #########################################################################
 
@@ -110,7 +101,7 @@ def extract_filter(conv_layer_idx, model):
 
 #########################################################################
 #
-#        QUESTION 2.1.4
+#        extract all feature maps given an input image
 # 
 #########################################################################
 
