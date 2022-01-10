@@ -115,11 +115,11 @@ def stats(loader, net):
 # In[4]:
 
 
-#########################################################################
+###############################################################################################
 #
-#        QUESTION 1.1.1 code 
+# train model on only one batch of the training data, and part or all of the validation data
 # 
-#########################################################################
+###############################################################################################
 
 
 # In[5]:
@@ -160,7 +160,7 @@ for epoch in range(nepochs):
     train_loss.backward()
     optimizer.step()
     
-    #get validation loss and accuracy
+    # get validation loss and accuracy
     valid_loss, accuracy = stats(valid_loader, net)
     
     statsrec[:,epoch] = (train_loss.item(), valid_loss, accuracy)
@@ -169,7 +169,7 @@ for epoch in range(nepochs):
 
 # In[7]:
 
-
+# graph the training loss and validation loss over epochs
 fig, ax1 = plt.subplots()
 plt.plot(statsrec[0], 'r', label = 'training loss', )
 plt.plot(statsrec[1], 'g', label = 'validation loss' )
@@ -189,7 +189,7 @@ plt.show()
 
 #########################################################################
 #
-#        QUESTION 1.1.2 code 
+#        Adjust the network
 # 
 #########################################################################
 
@@ -260,7 +260,7 @@ plt.show()
 
 #########################################################################
 #
-#        QUESTION 1.2 code 
+#        finetune the model and train on the complete training dataset 
 # 
 #########################################################################
 
@@ -370,6 +370,7 @@ for epoch in range(nepochs):
 
 # In[15]:
 
+# display the graph of training and validation loss over epochs to show the optimal number of training epochs
 
 plt.figure()
 fig, ax1 = plt.subplots()
@@ -483,7 +484,7 @@ plot_confusion_matrix(cm_v, labels_name=CLASS_LABELS, title='Validation Set Conf
 
 #########################################################################
 #
-#        QUESTION 1.3 code 
+#        predict the unlabeled test data using best trained model 
 # 
 #########################################################################
 
