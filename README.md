@@ -14,7 +14,7 @@ Secondly, I train the model on the complete training dataset, and use the comple
 
 At last, I use the best finetuned model on the unlabeled test data and generate predictions.
 
-In the part of CNN visualization, it involves to extract the filters from a given layer of the AlexNet model. In this way, extracting and visualizing feature maps is available which are the result of the filter kernels applied to the convolutional layer input.
+In the part of AlexNet visualization, it involves to extract the filters from a given layer of the AlexNet model. In this way, extracting and visualizing feature maps is available which are the result of the filter kernels applied to the convolutional layer input.
 
 |      | Filter | Feature map | Brief explanation |
 |------------|-------------|-------------|-------------|
