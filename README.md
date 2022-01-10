@@ -8,7 +8,7 @@ In the part of image classification, I firstly use only one batch of the trainin
 
 Secondly, I train the model on the complete training dataset, and use the complete validation set to determine when to stop training. I experiment with some form of regularization such as dropout or data augmentation to overfit the training data. Besides, two confusion matrices, one for the training set and one for the validation set is displayed to show the model performance.
 
-![graph](/training and validation loss.png)
+![graph](https://github.com/Shiwen95/Image-Classification-and-Visualizations-with-Convolutional-Neural-Networks---ImageNet10-/blob/main/Image%20Classification/training%20and%20validation%20loss.png)
 
 At last, I use the best finetuned model on the unlabeled test data and generate predictions.
 
